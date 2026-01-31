@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Naissance de Qian et Fabien</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fdfbf9;
+            color: #4a4a4a;
+        }
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .store-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .store-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+        .bg-sage { background-color: #b2b9ad; }
+        .text-sage { color: #8a9484; }
+        .countdown-item {
+            min-width: 60px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="pt-20 pb-10 px-4 text-center">
+        <h1 class="text-5xl md:text-7xl text-sage mb-6 italic">La Liste de Qian et Fabien</h1>
+        <p class="max-w-xl mx-auto text-lg font-light leading-relaxed text-gray-500 italic">
+            "Deux petites mains, deux petits pieds... et bientôt un grand changement dans nos vies."
+        </p>
+    </header>
+
+    <section class="mb-16">
+        <div class="max-w-md mx-auto bg-white/50 backdrop-blur-sm rounded-3xl p-6 border border-gray-100 shadow-sm">
+            <p class="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-4 text-center">Rencontre prévue dans...</p>
+            <div id="countdown" class="flex justify-center gap-4 text-sage">
+                <div class="countdown-item text-center">
+                    <span id="days" class="text-3xl font-light block italic">00</span>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400">Jours</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl uppercase tracking-[0.2em] mb-4 font-light">Les listes dans différentes boutiques</h2>
+            <div class="w-12 h-px bg-sage mx-auto mb-6"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+            
+            <div class="store-card bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-sm p-8 text-center">
+                <div class="w-20 h-20 bg-[#f9f7f4] rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-3xl">🌿</span>
+                </div>
+                <h3 class="text-3xl mb-4 italic text-sage">Liste sur Bambinou</h3>
+                <p class="text-sm font-light text-gray-500 mb-8 leading-relaxed">
+                    
+                </p>
+                <a href="https://www.bambinou.com/mgxbabyregistry/index/registry/id/GUPYDKJOLQJQ/" target="_blank" class="block w-full py-4 bg-sage text-white rounded-full text-sm uppercase tracking-widest hover:bg-opacity-90 transition shadow-md">
+                    Accéder à la liste
+                </a>
+            </div>
+
+            <div class="store-card bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-sm p-8 text-center">
+                <div class="w-20 h-20 bg-[#f9f7f4] rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-3xl">🧸</span>
+                </div>
+                <h3 class="text-3xl mb-4 italic text-sage">Liste sur Amazon</h3>
+                <p class="text-sm font-light text-gray-500 mb-8 leading-relaxed">
+                    
+                </p>
+                <a href="https://www.amazon.fr/baby-reg/brenier-fabien-qian-yang-mars-2026-alfortville/HDYY7OBX8MZO" target="_blank" class="block w-full py-4 bg-sage text-white rounded-full text-sm uppercase tracking-widest hover:bg-opacity-90 transition shadow-md">
+                    Accéder à la liste
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="max-w-4xl mx-auto px-4 mb-24">
+        <div class="bg-[#f2f0ed] rounded-[3rem] p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl mb-4 italic text-gray-700">La Cagnotte</h2>
+                <p class="font-light text-gray-600 mb-8 max-w-sm">
+                    Pour ceux qui souhaitent contribuer librement aux futurs projets ou besoins de bébé.
+                </p>
+                <a href="https://paypal.me/fabienbrenier" target="_blank" class="text-sage font-medium underline tracking-[0.2em] uppercase text-xs hover:text-black transition">
+                    Participer via PayPal
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <img src="Qrcode.png" alt="QR Code" class="w-32 h-32">
+                <p class="text-[9px] text-center mt-3 text-gray-400 uppercase tracking-tighter">Scanner pour donner</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-20 px-4 border-t border-gray-50 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h3 class="text-xl mb-12 uppercase tracking-[0.3em] font-light italic">Informations</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-sm font-light text-gray-500 mb-16">
+                <div class="space-y-2">
+                    <p class="font-semibold text-gray-800 uppercase text-[10px] tracking-widest mb-3 text-sage">Livraison</p>
+                    <p>Fabien Brenier</p>
+                    <p>1 Rue Babeuf</p>
+                    <p>94140 Alfortville</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="font-semibold text-gray-800 uppercase text-[10px] tracking-widest mb-3 text-sage">Contact</p>
+                    <p>06 58 39 52 81</p>
+                    <p>fabienbrenier@gmail.com</p>
+                </div>
+            </div>
+            <p class="text-3xl italic text-sage mb-6">Merci infiniment.</p>
+            <p class="text-[10px] text-gray-300 uppercase tracking-[0.4em] font-medium">✨ 2026 — En attendant Bébé ✨</p>
+        </div>
+    </footer>
+
+    <script>
+        // RÉGLAGE : Mettez ici la date prévue de naissance (Format: Mois Jour, Année Heure:Min:Sec)
+        const targetDate = new Date("March 22, 2026 00:00:00").getTime();
+
+        const countdownTimer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            // Calculs pour les jours, heures, minutes
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+            // Affichage des résultats
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+
+            // Si le compte à rebours est fini
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.getElementById("countdown").innerHTML = "<span class='text-xl italic'>Le petit trésor est arrivé ! ✨</span>";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
